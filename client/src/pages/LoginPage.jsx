@@ -4,7 +4,8 @@ import { useAuth } from "../contexts/authentication";
 function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const { login } = useAuth();
+
+  const { login } = useAuth(); 
 
   const handleSubmit = (event) => {
     event.preventDefault();
